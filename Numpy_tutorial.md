@@ -1,4 +1,4 @@
-**import numpy as np 
+#### import numpy as np 
 arr=np.array([1,2]) => `create ndarray`
 
 np.__version__ => `version of numpy`
@@ -24,9 +24,8 @@ arr2=arr.astype('i') => `convert type of arr to 'i'`
 
 new=x.copy() => `create copy from x`
 
-s=x.view() => `view x as s which affected to any change in x, 
-		
-		any change in s will affect in x`
+s=x.view() => `view x as s which affected to any change in x,<br/>
+                        any change in s will affect in x`
 		
 print(s.base) => `if s is copy => None. if view => return original array`
 
@@ -36,13 +35,11 @@ y=x.reshape(2,4) => `resize x to be 2d as y as view`
 
 y=x.reshape(-1) => `convert to 1d`
 
-for x in np.nditer(arr,flags=['buffered'] => `to free space for data` , op_dtype=['S']):
+for x in np.nditer(arr,flags=['buffered'] => `to free space for data` , op_dtype=['S']):<br/>
+        print(x) => `print every value in arr whatever its dimension wih type S`
 	
-	print(x) => `print every value in arr whatever its dimension wih type S`
-	
-for i, x in np.mdenumerate(arr):
-	
-	print(i,x) => `return x and its index location`
+for i, x in np.mdenumerate(arr):<br/>
+        print(i,x) 	=> `return x and its index location`
 	
 x=np.concatenate `or` stack ((arr1,arr2),axis=0 `or` 1)  => `concate arrays in line (1) or vertical (0)`
 
