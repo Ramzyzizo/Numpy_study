@@ -1,6 +1,8 @@
 **import numpy as np 
 arr=np.array([1,2]) => `create ndarray`
+
 np.__version__ => `version of numpy`
+
 type(arr) =>  `the type of the object`
 arr=np.array([[],[],[]]) =>  `2d array`
 np.array(arr.ndim) =>  `dimension of array`
